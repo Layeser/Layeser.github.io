@@ -25,6 +25,9 @@ for (const file of walk(dist).filter((f) => f.endsWith('.html'))) {
   html = html.replace(/<script type="module" crossorigin src=/g, '<script type="module" crossorigin fetchpriority="low" src=')
   writeFileSync(file, html)
 }
+// "/" without JavaScript: the two language links are in the HTML; also send no-JS visitors and crawlers to /en/.
+const root = `${dist}index.html`
+writeFileSync(root, readFileSync(root, 'utf8').replace('</head>', '<noscript><meta http-equiv="refresh" content="0; url=/en/"></noscript></head>'))
 copyFileSync(`${dist}404/index.html`, `${dist}404.html`)
 writeFileSync(`${dist}.nojekyll`, '')
 

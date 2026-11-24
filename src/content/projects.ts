@@ -516,7 +516,7 @@ export const projects: Project[] = [
     title: { en: 'Product categorisation', fr: 'Catégorisation de produits' },
     line: {
       en: '100 categories in a 184-node taxonomy, with confidence routing to a human. The cheap model won.',
-      fr: 'Cent catégories dans une taxonomie de 184 nœuds, avec routage vers un humain selon la confiance. Le modèle le plus simple a gagné.',
+      fr: '100 catégories dans une taxonomie de 184 nœuds, avec routage vers un humain selon la confiance. Le modèle le plus simple a gagné.',
     },
     headline: { value: 82, digits: 0, suffix: ' %', label: { en: 'of products auto-categorised at 94.6 % accuracy', fr: 'des produits classés automatiquement à 94,6 % d’exactitude' } },
     headlineNote: { en: 'TF-IDF beat fine-tuned XLM-R', fr: 'TF-IDF devant XLM-R fine-tuné' },

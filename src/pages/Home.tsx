@@ -52,16 +52,16 @@ function Hero({ lang }: { lang: Lang }) {
         </div>
         <div className="mx-auto w-56 sm:w-64 lg:w-72">
           <picture>
-            <source srcSet="/portrait/sekou-kaba-sm.avif 400w, /portrait/sekou-kaba-lg.avif 641w" type="image/avif" sizes="(min-width: 1024px) 18rem, 16rem" />
-            <source srcSet="/portrait/sekou-kaba-sm.webp 400w, /portrait/sekou-kaba-lg.webp 641w" type="image/webp" sizes="(min-width: 1024px) 18rem, 16rem" />
+            <source srcSet="/portrait/sekou-kaba-sm.avif 400w, /portrait/sekou-kaba-lg.avif 561w" type="image/avif" sizes="(min-width: 1024px) 18rem, 16rem" />
+            <source srcSet="/portrait/sekou-kaba-sm.webp 400w, /portrait/sekou-kaba-lg.webp 561w" type="image/webp" sizes="(min-width: 1024px) 18rem, 16rem" />
             <img
               src="/portrait/sekou-kaba-lg.jpg"
-              width={641}
-              height={690}
+              width={561}
+              height={630}
               alt={d.a11y.portraitAlt}
               fetchPriority="high"
               decoding="async"
-              className="aspect-[641/690] w-full rounded-3xl border border-line object-cover shadow-2xl shadow-black/20"
+              className="aspect-[561/630] w-full rounded-3xl border border-line object-cover shadow-2xl shadow-black/20"
             />
           </picture>
         </div>
@@ -150,7 +150,7 @@ function ExperienceSection({ lang }: { lang: Lang }) {
             <span className="absolute -left-[29px] top-2 h-2.5 w-2.5 rounded-full border-2 border-bg bg-accent sm:-left-[45px]" aria-hidden="true" />
             <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-1">
               <h3 className="text-xl font-bold">{typeset(x.org[lang], lang)}</h3>
-              <p className="font-mono text-xs text-faint">{x.place[lang]}</p>
+              <p className="font-mono text-xs text-faint">{typeset(x.place[lang], lang)}</p>
             </div>
             {x.roles.map((r) => (
               <div key={r.start} className="mt-5">
@@ -262,7 +262,7 @@ function EducationAndAbout({ lang }: { lang: Lang }) {
                 <p className="text-muted">{typeset(e.degree[lang], lang)}</p>
               </div>
               <p className="shrink-0 text-sm text-faint">
-                {e.place[lang]} · <span className="metric">{formatRange(e.start, e.end, lang, e.endMonth)}</span>
+                {typeset(e.place[lang], lang)} · <span className="metric">{formatRange(e.start, e.end, lang, e.endMonth)}</span>
               </p>
             </li>
           ))}

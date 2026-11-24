@@ -216,8 +216,7 @@ export const skills: SkillGroup[] = [
   },
   {
     title: { en: 'Data Engineering', fr: 'Data engineering' },
-    items: ['Databricks', 'Kafka', 'CDC (Debezium)', 'Airflow', 'PostgreSQL', 'Redis', 'ETL / ELT', 'SQL', 'Pandas', 'Polars'],
-    inTraining: ['Spark'],
+    items: ['Databricks', 'Spark (PySpark, Spark SQL)', 'Kafka', 'CDC (Debezium)', 'Airflow', 'PostgreSQL', 'Redis', 'ETL / ELT', 'SQL', 'Pandas', 'Polars'],
   },
   {
     title: { en: 'MLOps & DevOps', fr: 'MLOps & DevOps' },

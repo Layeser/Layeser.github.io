@@ -41,7 +41,7 @@ The English and French texts state the same facts; each row covers both.
 | École Centrale de Lille, MSc Data Science & AI, taught in English, 2024 – Oct 2026 | CV education l.3 |
 | École Centrale Casablanca, engineering degree, AI, double degree, 2021 – Oct 2026 | CV education l.4 |
 | INP-HB, CPGE MPSI / MP, Yamoussoukro, 2019 – Jul 2021 | CV education l.5 |
-| Every skill, and the "Notions" / "In training" levels | CV skills l.4–10 |
+| Every skill, and the "Notions" / "In training" levels | CV skills l.4–10 (Spark: used with PySpark and Spark SQL on Databricks, confirmed by Sekou on 2026-11-24) |
 | Languages | CV skills l.13 |
 
 ## About (`en.ts`, `fr.ts`)

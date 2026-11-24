@@ -30,7 +30,7 @@ export function equivalentPath(pathname: string, to: Lang): string {
 export const other = (lang: Lang): Lang => (lang === 'en' ? 'fr' : 'en')
 
 export const pick = <T,>(bi: Bi<T>, lang: Lang): T => bi[lang]
-export const term = (t: Term, lang: Lang): string => (typeof t === 'string' ? t : t[lang])
+export const term = (t: Term, lang: Lang): string => typeset(typeof t === 'string' ? t : t[lang], lang)
 
 /** Numbers through Intl: decimal comma and narrow no-break thousands separator in French. */
 export function formatNumber(value: number, digits: number, lang: Lang): string {
