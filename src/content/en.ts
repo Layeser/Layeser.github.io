@@ -1,0 +1,105 @@
+import type { Dictionary } from './types'
+
+export const en: Dictionary = {
+  meta: {
+    siteTitle: 'Sekou Kaba — AI & Machine Learning Engineer',
+    homeTitle: 'Sekou Kaba — AI & Machine Learning Engineer',
+    homeDescription:
+      'AI & ML engineer: LLM agents, RAG, computer vision and MLOps, taken from research to production and measured. Kaggle 1st place, CVPR 2027 submission.',
+    ogLocale: 'en_GB',
+    ogAlt: 'Sekou Kaba, AI & Machine Learning Engineer',
+  },
+  a11y: {
+    skip: 'Skip to content',
+    nav: 'Main',
+    toLight: 'Switch to light theme',
+    toDark: 'Switch to dark theme',
+    language: 'Language',
+    switchTo: 'Lire en français',
+    portraitAlt: 'Portrait of Sekou Kaba, smiling, in a black t-shirt',
+    external: 'opens in a new tab',
+  },
+  nav: { work: 'Work', experience: 'Experience', skills: 'Skills', about: 'About', contact: 'Contact' },
+  cv: { label: 'Download CV', href: '/Sekou-Kaba-CV-EN.pdf', note: 'PDF, 1 page' },
+  hero: {
+    role: 'AI & Machine Learning Engineer',
+    line: 'I take AI systems from research to production, and measure them before I trust them.',
+    availability: 'Open to a permanent role · available now · Lille / Paris',
+    proofs: [
+      { value: '1^{st} / 13', label: 'teams in a Kaggle text-to-motion retrieval challenge' },
+      { value: 'CVPR 2027', label: 'first-author paper, under review' },
+      { value: '2 M', label: 'transactions in a fraud-detection system for a microfinance institution' },
+    ],
+    ctaWork: 'Explore my work',
+  },
+  work: {
+    title: 'Selected work',
+    intro:
+      'Personal projects on public or synthetic data, each with code, tests and an evaluation protocol. The limitations are part of the result.',
+    personal: 'Personal project',
+    featured: 'Featured',
+    more: 'More projects',
+    read: 'Read the case study',
+  },
+  experience: {
+    title: 'Experience',
+    intro: 'Client and employer work. The detail stops where confidentiality starts.',
+    clientWork: 'Client work',
+    clientNote: 'Confidential, no public code.',
+    publicReconstruction: 'Public reconstruction on synthetic data:',
+    research: 'Research highlight',
+    stack: 'Stack',
+  },
+  skills: {
+    title: 'Skills',
+    intro: 'What I have used in real work or in the projects above. The quieter items are the ones I am still building up.',
+    notions: 'Notions',
+    inTraining: 'In training',
+    languagesTitle: 'Languages',
+    languages: "French (fluent) · English (professional — master's and research in English)",
+    legend: 'Dashed: notions or in training',
+  },
+  education: { title: 'Education' },
+  about: {
+    title: 'About',
+    paragraphs: [
+      "I trained as an engineer through two years of preparatory classes in Côte d'Ivoire, then at École Centrale Casablanca and École Centrale de Lille, where I specialised in AI. Along the way I have built a RAG assistant for a finance team, a fraud-detection system for a microfinance institution, and a new attention mechanism for spiking neural networks, now under review at CVPR.",
+      'The thread through that work is simple: a model is not done when it runs in a notebook. It is done when it is evaluated on data it has never seen, deployed behind an API, and watched once it runs. That is why my project pages show their protocols, their limitations, and the validation leak I found in my own winning Kaggle model.',
+    ],
+  },
+  contact: {
+    title: 'Contact',
+    text: 'If you are building AI systems that have to hold up in production, I would be glad to talk.',
+    copy: 'Copy email',
+    copied: 'Copied',
+    write: 'Email me',
+  },
+  project: {
+    back: 'All projects',
+    personal: 'Personal project · public or synthetic data',
+    keyResults: 'Key results',
+    stack: 'Stack',
+    repo: 'Code, tests and full README on GitHub',
+    figure: 'Figure produced by the project code',
+    next: 'Next project',
+    headings: {
+      problem: 'The problem',
+      context: 'Context',
+      approach: 'What I built',
+      results: 'Results',
+      decisions: 'Engineering decisions',
+      limitations: 'Limitations',
+      lessons: 'What the measurements changed',
+    },
+  },
+  notFound: {
+    title: 'Page not found',
+    text: 'This page does not exist, or it moved.',
+    home: 'Back to the home page',
+  },
+  footer: {
+    built: 'Built with React and TypeScript, pre-rendered, no cookies, no trackers.',
+    licence: 'Code MIT — content © Sekou Kaba',
+    source: 'Source',
+  },
+}

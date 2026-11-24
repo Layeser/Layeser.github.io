@@ -1,0 +1,13 @@
+{
+  "name": "Sekou Kaba — AI & Machine Learning Engineer",
+  "short_name": "Sekou Kaba",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#060911",
+  "theme_color": "#060911",
+  "icons": [
+    { "src": "/favicon.svg", "type": "image/svg+xml", "sizes": "any" },
+    { "src": "/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
