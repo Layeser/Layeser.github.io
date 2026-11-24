@@ -140,7 +140,7 @@ export const projects: Project[] = [
       en: "A RAG over internal policies that cites its sources and refuses when the documents don't hold the answer.",
       fr: 'Un RAG sur des politiques internes qui cite ses sources et refuse de répondre quand les documents ne contiennent pas la réponse.',
     },
-    headline: { value: 98.3, digits: 1, suffix: ' %', label: { en: 'answer accuracy on a 66-question gold set', fr: 'de réponses exactes sur 66 questions de référence' } },
+    headline: { value: 98.3, digits: 1, suffix: ' %', label: { en: 'answer accuracy on 58 reference questions (57/58)', fr: 'de réponses exactes sur 58 questions de référence (57/58)' } },
     headlineNote: { en: '100 % correct citations', fr: '100 % de citations correctes' },
     metrics: [
       { value: 98.3, digits: 1, suffix: ' %', label: { en: 'answer accuracy (57/58)', fr: 'réponses exactes (57/58)' } },

@@ -32,7 +32,7 @@ The English and French texts state the same facts; each row covers both.
 | Research highlight "linear-complexity attention" | CV experience l.18; no title, method name or figure published (double-blind review) |
 | Computer Vision Engineer, M1 internship, May–Aug 2025, four bullets (no cameras in operation, ~28,000 images, YOLOv7 tiny AP 0.92, sensors) | CV experience l.22–27; stack l.29 |
 | Stellantis, AI Engineer, internship / gap year / fixed-term contract, Jun 2023–Aug 2024, Casablanca | CV experience l.31–32 |
-| RAG 15+ users; hybrid TF-IDF + vector retrieval; role-based access; evaluation (92 % on 200 real questions, 96 % on 1,000 synthetic, 100 % refusal on 200 out-of-corpus); invoice extraction 93 % exact on 500; sales forecasting; Power BI reporting; stack incl. Chroma, Docker | CV experience (Stellantis bullets) + details confirmed by Sekou on 2026-11-24 (protocol, Chroma chosen over FAISS) |
+| RAG 15+ users; hybrid TF-IDF + vector retrieval; role-based access; evaluation (92 % on 200 real questions, 96 % on 1,000 synthetic, 100 % refusal on 200 out-of-corpus); invoice extraction 93 % exact on 500; sales forecasting; Power BI reporting; stack incl. FAISS, Docker | CV experience (Stellantis bullets) + details confirmed by Sekou on 2026-11-24 (evaluation protocol; vector store FAISS) |
 | Idus Capital, private-equity fund, Data Scientist internship, Jun–Aug 2022; ~500 companies; due diligence; Power BI | CV experience l.41–45 |
 
 ## Education and skills (`src/content/career.ts`)
