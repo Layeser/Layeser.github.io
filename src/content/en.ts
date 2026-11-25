@@ -16,7 +16,7 @@ export const en: Dictionary = {
     toDark: 'Switch to dark theme',
     language: 'Language',
     switchTo: 'Lire en français',
-    portraitAlt: 'Portrait of Sekou Kaba, smiling, in a black t-shirt',
+    portraitAlt: 'Black and white portrait of Sekou Kaba in a black jacket',
     external: 'opens in a new tab',
   },
   nav: { work: 'Work', experience: 'Experience', skills: 'Skills', about: 'About', contact: 'Contact' },
