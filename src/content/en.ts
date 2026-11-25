@@ -64,7 +64,7 @@ export const en: Dictionary = {
     title: 'About',
     paragraphs: [
       "I trained as an engineer through two years of preparatory classes in Côte d'Ivoire, then at École Centrale Casablanca and École Centrale de Lille, where I specialised in AI. Along the way I have built a RAG assistant for a finance team, a fraud-detection system for a microfinance institution, and a new attention mechanism for spiking neural networks, now under review at CVPR.",
-      'The thread through that work is simple: a model is not done when it runs in a notebook. It is done when it is evaluated on data it has never seen, deployed behind an API, and watched once it runs. That is why my project pages show their protocols, their limitations, and the validation leak I found in my own winning Kaggle model.',
+      'The thread through that work is simple: a model is not done when it runs in a notebook. It is done when it is evaluated on data it has never seen, deployed behind an API, and watched once it runs. That is why my project pages show their protocols, their limitations, and what the measurements changed in my choices.',
     ],
   },
   contact: {

@@ -65,7 +65,7 @@ export const fr: Dictionary = {
     title: 'À propos',
     paragraphs: [
       "J'ai suivi deux ans de classes préparatoires en Côte d'Ivoire, puis l'École Centrale Casablanca et l'École Centrale de Lille, où je me suis spécialisé en IA. En chemin, j'ai construit un assistant RAG pour une équipe finance, un système de détection de fraude pour une institution de microfinance, et un nouveau mécanisme d'attention pour les réseaux de neurones à impulsions, aujourd'hui en relecture à CVPR.",
-      "Le fil conducteur est simple : un modèle n'est pas terminé quand il tourne dans un notebook. Il l'est quand il est évalué sur des données qu'il n'a jamais vues, déployé derrière une API et surveillé une fois en service. C'est pour cela que mes pages projets montrent leurs protocoles, leurs limites, et la fuite de validation que j'ai trouvée dans mon propre modèle gagnant sur Kaggle.",
+      "Le fil conducteur est simple : un modèle n'est pas terminé quand il tourne dans un notebook. Il l'est quand il est évalué sur des données qu'il n'a jamais vues, déployé derrière une API et surveillé une fois en service. C'est pour cela que mes pages projets montrent leurs protocoles, leurs limites et ce que les mesures ont changé dans mes choix.",
     ],
   },
   contact: {

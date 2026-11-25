@@ -241,14 +241,13 @@ export const projects: Project[] = [
     featured: true,
     title: { en: 'Text-to-motion retrieval', fr: 'Text-to-motion retrieval' },
     line: {
-      en: 'Find a motion-capture sequence from a sentence. Won the Kaggle challenge, then found that the local validation score was measured on training data.',
-      fr: "Retrouver une séquence de motion capture à partir d'une phrase. Challenge Kaggle gagné, puis découverte que le score de validation local était mesuré sur des données d'entraînement.",
+      en: 'Find a motion-capture sequence from a sentence. 1st place in the Kaggle challenge, then a rebuilt pipeline evaluated on motions never seen in training and served behind an API.',
+      fr: "Retrouver une séquence de motion capture à partir d'une phrase. Première place au challenge Kaggle, puis un pipeline reconstruit, évalué sur des mouvements jamais vus à l'entraînement et servi par une API.",
     },
     headline: { value: 0.898, digits: 3, label: { en: 'leaderboard score, 1st of 13 teams (team of 3)', fr: 'score au classement, 1^{re} équipe sur 13 (équipe de 3)' } },
     headlineNote: { en: 'R@1 0.571 on unseen motions', fr: 'R@1 de 0,571 sur des mouvements inédits' },
     metrics: [
       { value: 0.898, digits: 3, label: { en: 'Kaggle score (2nd team: 0.867)', fr: 'score Kaggle (2^{e} équipe : 0,867)' } },
-      { value: 0.933, digits: 3, label: { en: 'original local R@1, leaked', fr: "R@1 local d'origine, avec fuite" } },
       { value: 0.571, digits: 3, label: { en: 'R@1 among 32, unseen motions', fr: 'R@1 parmi 32, mouvements inédits' } },
       { value: 20, digits: 0, suffix: ' ms', label: { en: 'query latency on CPU', fr: 'latence par requête sur CPU' } },
     ],
@@ -291,14 +290,14 @@ export const projects: Project[] = [
         kind: 'results',
         body: {
           en: [
-            "**The finding.** The notebook reported Recall@1 = 0.933 on the challenge's validation folders. Hashing every candidate motion showed that **640 of 640** sampled validation candidates were also training motions: the model was recognising sequences it had memorised. The leak concerns only the local score; the leaderboard scores hidden data.",
+            "**Validation check.** Before rebuilding the pipeline, I checked whether the challenge's validation folders contained motions unseen in training: they shared their motions with the training set, so they measured recognition rather than generalisation. I therefore held out whole motions to measure it. The Kaggle leaderboard itself scores hidden test data.",
             'The rebuilt pipeline holds out 10 % of motion ids (601 motions, 1,803 descriptions) **before** training. On these unseen motions: R@1 **0.571** with the target among 32 candidates (random: 0.031), and 0.119 against the full gallery of 601 (median rank 10).',
-            'The held-out score plateaus around epoch 20 while the training loss keeps falling. Under the leaky protocol that plateau was invisible, because memorisation raised the reported score.',
+            'The held-out score plateaus around epoch 20 while the training loss keeps falling: only motions truly held out reveal that plateau, which sets where to stop training.',
           ],
           fr: [
-            "**La découverte.** Le notebook annonçait un Recall@1 de 0,933 sur les dossiers de validation du challenge. En hachant chaque mouvement candidat, j'ai constaté que **640 sur 640** candidats de validation échantillonnés étaient aussi des mouvements d'entraînement : le modèle reconnaissait des séquences qu'il avait mémorisées. La fuite ne concerne que le score local ; le classement note des données cachées.",
+            "**Contrôle de la validation.** Avant de reconstruire le pipeline, j'ai vérifié que les dossiers de validation du challenge contenaient des mouvements inédits : ils partageaient leurs mouvements avec l'entraînement, et mesuraient donc la reconnaissance plutôt que la généralisation. J'ai donc mis de côté des mouvements entiers pour la mesurer. Le classement Kaggle, lui, note des données de test cachées.",
             "Le pipeline reconstruit met de côté 10 % des identifiants de mouvements (601 mouvements, 1 803 descriptions) **avant** l'entraînement. Sur ces mouvements inédits : R@1 de **0,571** avec la cible parmi 32 candidats (hasard : 0,031), et de 0,119 face à toute la galerie de 601 (rang médian 10).",
-            "Le score sur les données mises de côté plafonne vers l'epoch 20 pendant que la loss d'entraînement continue de baisser. Avec le protocole fuité, ce plateau était invisible, car la mémorisation faisait monter le score affiché.",
+            "Le score sur les données mises de côté plafonne vers l'epoch 20 pendant que la loss d'entraînement continue de baisser : seuls des mouvements réellement mis de côté révèlent ce plateau, qui indique où arrêter l'entraînement.",
           ],
         },
       },
